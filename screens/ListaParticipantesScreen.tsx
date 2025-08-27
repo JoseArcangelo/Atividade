@@ -91,7 +91,6 @@ const ListaParticipantesScreen = ({ route }: Props) => {
                 }
               );
 
-
               setAttendees((prev) =>
                 prev.map((p) =>
                   p.id === id ? { ...p, checkedIn: true } : p
