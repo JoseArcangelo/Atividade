@@ -1,4 +1,4 @@
-// App.tsx
+///Sor a parte de interface acabei usando a ia para fazer, mas a parte das rotas e lógica busquei no material e exemplos na ia quando eu nao ia conseguindo fazer
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";

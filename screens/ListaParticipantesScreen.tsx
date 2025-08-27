@@ -32,7 +32,6 @@ const ListaParticipantesScreen = ({ route }: Props) => {
   const [attendees, setAttendees] = useState<Participante[]>([]);
   const [search, setSearch] = useState("");
 
-  // Buscar participantes
   useEffect(() => {
     const fetchAttendees = async () => {
       try {
@@ -66,7 +65,6 @@ const ListaParticipantesScreen = ({ route }: Props) => {
     fetchAttendees();
   }, [itemId]);
 
-  // Confirmar check-in com POST
   const confirmCheckIn = async (id: string) => {
     const participante = attendees.find((p) => p.id === id);
     if (!participante) return;
