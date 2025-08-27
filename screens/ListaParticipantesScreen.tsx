@@ -91,10 +91,6 @@ const ListaParticipantesScreen = ({ route }: Props) => {
                 }
               );
 
-              if (!response.ok) {
-                const errData = await response.json();
-                throw new Error(errData.error || "Erro ao confirmar check-in");
-              }
 
               setAttendees((prev) =>
                 prev.map((p) =>
